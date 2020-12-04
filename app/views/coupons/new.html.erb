@@ -1,0 +1,8 @@
+<h1>Coupon Form</h1>
+<%= form_for @coupon do |c| %>
+Coupon Code: <%= c.text_field :coupon_code %>
+Store: <%= c.text_field :store %>
+<%= c.submit "Submit Coupon" %>
+<% end %>
+
+<%= params.inspect %>
